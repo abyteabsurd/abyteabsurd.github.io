@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  <style>
+    @font-face {
+      font-family: 'dosis';
+      src: url('fonts/Dosis-Regular.woff2') format('woff2'),
+          url('fonts/Dosis-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    * {
+      font-family: "dosis", monospace;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 14px;
+    }
+    #message-form input[type=text], #message-form textarea {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #F0EBD8;
+    }
+    .form-item {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <form id="message-form" method="POST" action="https://submit-form.com/pUfTuvEno">
+    <div class="form-item">
+      <label for="name">Name (optional): </label><br>
+      <input type="text" id="name" name="name" placeholder="Name" />
+    </div>
+    <div class="form-item">
+      <label for="name-color">Name color (optional): </label><br>
+      <input type="color" id="name-color" name="name-color" />
+    </div>
+    <div class="form-item">
+      <label for="website">Website (optional): </label><br>
+      <input type="text" id="site" name="site" placeholder="Website" />
+    </div>
+    <div class="form-item">
+      <label for="message">Message: </label><br>
+      <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+    </div>
+    <div class="h-captcha" data-sitekey="7774a308-bb26-4028-a476-76ecdee25408" data-size="compact"></div>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
